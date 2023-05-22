@@ -1,0 +1,123 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+.accordian {
+  width: 800px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+.head-text {
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  position: relative;
+}
+.head-text::after {
+  content: "45";
+  font-size: 10px;
+  padding: 8px 4px;
+  color: white;
+  background-color: #087f5b;
+  cursor: pointer;
+  position: absolute;
+
+  top: 0;
+  transform: translate(5%, -30%);
+}
+.department {
+  font-size: 14px;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  stroke: #087f5b;
+  cursor: pointer;
+}
+.page-head {
+  margin-bottom: 32px;
+  display: grid;
+
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  column-gap: 16px;
+
+  padding: 10px;
+  border-radius: 12px;
+}
+.section-head {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+.no-of-jobs {
+  font-weight: bolder;
+  font-size: 14px;
+  margin-right: 5px;
+  color: #adb5bd;
+}
+.post {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.job-mode {
+  font-size: 14px;
+  color: #adb5bd;
+  font-weight: bold;
+}
+.section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto auto;
+  background-color: #e9ecef;
+  border-radius: 12px;
+  padding: 12px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.section:hover {
+  transform: scale(1.01);
+}
+.hidden-box {
+  margin-top: 24px;
+  grid-column: 1/-1;
+  display: none;
+}
+.hidden-box-section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto auto;
+  margin-bottom: 16px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sub-page-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.sub-page-head:hover {
+  transform: scale(1.02);
+}
+.open {
+  display: block;
+}
